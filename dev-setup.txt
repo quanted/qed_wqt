@@ -1,0 +1,24 @@
+#clone
+git clone https://github.com/quanted/qed_hem.git
+
+#after cloning a project with submodules
+#fetch data and checkout appropriate project
+git submodule update --init --recursive 
+
+#update hem_app
+cd sam_app
+#head will be detached
+git checkout master
+
+#secret key for qed_sam
+# the file secret_key_django_dropbox.txt is shared 
+# on dropbox in directory ubertool_keys (or by other means)
+# needs to be placed the qed_hem directory
+
+#pycharm configuration
+#change interpreter to 2.7.* with django, etc, we need to switch to 3 to integrate with sam
+#also edit configuration (qed_sam django button)
+#add local_settings.py to environmental variables for qed_hem (use + to the right):
+#DJANGO_SETTINGS_MODULE=settings_local;PYTHONUNBUFFERED=1
+
+
