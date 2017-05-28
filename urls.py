@@ -9,7 +9,7 @@ print('qed.urls')
 #appends to the list of url patterns to check against
 urlpatterns = [
 	url(r'^', include('splash_app.urls')),
-    url(r'^sam/', include('sam_app.urls')),
+    url(r'^wqt/', include('wqt_app.urls')),
     #url(r'^hwbi/', include('hwbi_app.urls')),
     #url(r'^cts/', include('cts_app.urls')),
     #url(r'^ubertool/', include('ubertool_app.urls')),
